@@ -142,5 +142,5 @@ def registro():
     conexao_db.commit()
     conexao_db.close()
 
-    # Puxa a função Login (verifique se a importação está correta no seu script principal)
+    # Puxa a função Login
     Login.login()

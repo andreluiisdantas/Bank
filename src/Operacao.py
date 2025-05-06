@@ -191,7 +191,7 @@ def transferir(cpf):
         conexao_db.commit()
 
         # Executa o comando em SQL que insere uma nova transação a tabela de transações de quem recebeu
-        cursor.execute("INSERT INTO transacoes (cpf, tipo, valor, data_hora) VALUES (?, ?, ?, ?)",(cpf, tipo_recebido, valor, data_operacao))
+        cursor.execute("INSERT INTO transacoes (cpf, tipo, valor, data_hora) VALUES (?, ?, ?, ?)",(receptor, tipo_recebido, valor, data_operacao))
         conexao_db.commit()
 
         print("Transferência executada com sucesso!\n")
